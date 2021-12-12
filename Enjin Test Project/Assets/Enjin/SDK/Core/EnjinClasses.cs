@@ -188,6 +188,7 @@ namespace Enjin.SDK.Core
         public bool markedForDelete; // Flag if item has been marked for deletion
 
         public MetadataBase metadata; // A field to cache this item's basic metadata, if requested.
+        public string rawMetadata;
 
         /// <summary>
         /// Constructor
@@ -210,7 +211,7 @@ namespace Enjin.SDK.Core
             yield return metadataRequest.SendWebRequest();
 
             // If the request failed, log an error and throw an exception.
-            if (metadataRequest.isNetworkError)
+            if (metadataRequest.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log("<color=red>[ERROR]</color> Metadata network error: " + metadataRequest.error);
                 response.state = MetadataInfo.MetadataRequestState.RETRIEVAL_FAILED;
@@ -220,17 +221,17 @@ namespace Enjin.SDK.Core
             // Otherwise the request succeeded, so attempt to parse and return.
             else
             {
-                string metadataString = metadataRequest.downloadHandler.text;
+                rawMetadata = metadataRequest.downloadHandler.text;
 
                 try
                 {
-                    this.metadata = JsonUtility.FromJson<MetadataBase>(metadataString);
+                    this.metadata = JsonUtility.FromJson<MetadataBase>(rawMetadata);
                     response.state = MetadataInfo.MetadataRequestState.SUCCESS;
                     response.metadata = this.metadata;
                 }
                 catch (Exception e)
                 {
-                    Debug.Log("<color=red>[ERROR]</color> Failed to parse metadata: " + metadataString);
+                    Debug.Log("<color=red>[ERROR]</color> Failed to parse metadata: " + rawMetadata);
                     response.state = MetadataInfo.MetadataRequestState.PARSE_FAILED;
                     response.exception = new MetadataParseException(e);
                 }
@@ -252,7 +253,8 @@ namespace Enjin.SDK.Core
             yield return imageRequest.SendWebRequest();
 
             // If the request failed, log an error and throw an exception.
-            if (imageRequest.isNetworkError || imageRequest.isHttpError)
+            if (imageRequest.result == UnityWebRequest.Result.ConnectionError || 
+                imageRequest.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.Log("<color=red>[ERROR]</color> Image network error: " + imageRequest.error);
                 response.state = ImageInfo.ImageRequestState.RETRIEVAL_FAILED;
@@ -311,7 +313,8 @@ namespace Enjin.SDK.Core
                 yield return imageRequest.SendWebRequest();
 
                 // If the request failed, log an error and throw an exception.
-                if (imageRequest.isNetworkError || imageRequest.isHttpError)
+                if (imageRequest.result == UnityWebRequest.Result.ConnectionError || 
+                    imageRequest.result == UnityWebRequest.Result.ProtocolError)
                 {
                     Debug.Log("<color=red>[ERROR]</color> Image network error: " + imageRequest.error);
                     response.state = ImageInfo.ImageRequestState.RETRIEVAL_FAILED;

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690081357683",
+    "project_id": "unity-enjin-workshop",
+    "storage_bucket": "unity-enjin-workshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690081357683:android:c7822e60c71d38ec31ef06",
+        "android_client_info": {
+          "package_name": "com.MemphisGameDevs.EnjinTutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690081357683-n12lo0jmdv3ci8qursblktrao0g3ug4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI2mvYpUYYOZlMclz0DCpuo8Z_o3HYHpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690081357683-n12lo0jmdv3ci8qursblktrao0g3ug4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

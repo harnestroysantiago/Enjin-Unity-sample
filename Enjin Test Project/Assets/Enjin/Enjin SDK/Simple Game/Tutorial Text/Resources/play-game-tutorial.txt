@@ -1,0 +1,3 @@
+Playing the Simple Game
+
+This game is a simple clicker-style example. Now that the user has logged in and has linked their wallet to this application, you can begin interacting with truly-owned items in exciting ways. In this case, users can click to gradually reveal your item. After they've clicked enough to fully reveal it, the game will attempt to mint one of your tokens directly to the user.

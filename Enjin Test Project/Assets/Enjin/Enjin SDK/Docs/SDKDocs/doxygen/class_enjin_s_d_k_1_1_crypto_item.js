@@ -1,0 +1,26 @@
+var class_enjin_s_d_k_1_1_crypto_item =
+[
+    [ "CryptoItem", "class_enjin_s_d_k_1_1_crypto_item.html#a5db833587942b63e0672792eb1593af4", null ],
+    [ "balance", "class_enjin_s_d_k_1_1_crypto_item.html#a21b9bf37d4a702e58498dccde216316b", null ],
+    [ "circulatingSupply", "class_enjin_s_d_k_1_1_crypto_item.html#a4a0eab8f181f2f18cc2eec811663f938", null ],
+    [ "creator", "class_enjin_s_d_k_1_1_crypto_item.html#a78a5844d9506d909e607d3420cf22f93", null ],
+    [ "fromBlockchain", "class_enjin_s_d_k_1_1_crypto_item.html#a4d8dc8de197dc99314592962d6d71988", null ],
+    [ "icon", "class_enjin_s_d_k_1_1_crypto_item.html#aad6c8e4c026d4c3adfa2db4c2ea580c2", null ],
+    [ "iconTexture", "class_enjin_s_d_k_1_1_crypto_item.html#a353806dc61ee5ed955758fefd6adf9eb", null ],
+    [ "index", "class_enjin_s_d_k_1_1_crypto_item.html#acaae7d9d79ccbf27322b519bf027b603", null ],
+    [ "isCreator", "class_enjin_s_d_k_1_1_crypto_item.html#aa5adc826f3b4834ff3b80bcfb6398670", null ],
+    [ "itemURI", "class_enjin_s_d_k_1_1_crypto_item.html#ab9817219c2a62f12a18e7d7ecf5b6bf5", null ],
+    [ "markedForDelete", "class_enjin_s_d_k_1_1_crypto_item.html#aab88359239c79dea5f9fa61674a7446b", null ],
+    [ "meltFeeMaxRatio", "class_enjin_s_d_k_1_1_crypto_item.html#a66eb8c09eed44f87aab13c00e0ff03c7", null ],
+    [ "meltFeeRatio", "class_enjin_s_d_k_1_1_crypto_item.html#a23f882564954205210f51781ab29626a", null ],
+    [ "meltValue", "class_enjin_s_d_k_1_1_crypto_item.html#a4604cdc84a0936e82c74d697ccc06746", null ],
+    [ "name", "class_enjin_s_d_k_1_1_crypto_item.html#a8377cb4170e340c87a5eb63ad2ec456d", null ],
+    [ "nonFungible", "class_enjin_s_d_k_1_1_crypto_item.html#a41625354c6c2dee881bac11c82686eb6", null ],
+    [ "reserve", "class_enjin_s_d_k_1_1_crypto_item.html#a8325db13f64c8103538e354ec8addd71", null ],
+    [ "supplyModel", "class_enjin_s_d_k_1_1_crypto_item.html#ae7cdaaa9150bed7286aaeeb99fd815c2", null ],
+    [ "token_id", "class_enjin_s_d_k_1_1_crypto_item.html#a181ac28cef430dedda5875c9dc481ec3", null ],
+    [ "totalSupply", "class_enjin_s_d_k_1_1_crypto_item.html#a4c401b051bd17e2f44579b107f54bc2c", null ],
+    [ "transferable", "class_enjin_s_d_k_1_1_crypto_item.html#a339545b2ee74abdcb419d064d9fb3971", null ],
+    [ "transferFeeSettings", "class_enjin_s_d_k_1_1_crypto_item.html#a4b636dce333c90b0b5d2cdb9743bc671", null ],
+    [ "whitelists", "class_enjin_s_d_k_1_1_crypto_item.html#a7b02b57e3b899e4c380d7e8ebb63c750", null ]
+];

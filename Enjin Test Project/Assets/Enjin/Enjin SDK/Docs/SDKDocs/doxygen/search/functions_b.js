@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['makenewdoxyfile',['MakeNewDoxyFile',['../class_doxygen_window.html#abf3c2a3c3a53e6691e58b865da8404de',1,'DoxygenWindow']]],
+  ['managerolesmode',['ManageRolesMode',['../class_team_controller.html#a1c72b3b8821607aacc787685084044d8',1,'TeamController']]],
+  ['meltitem',['MeltItem',['../class_enjin_s_d_k_1_1_enjin_requests.html#a0742e5d675b4f4d8223fd92b88c3d11e',1,'EnjinSDK::EnjinRequests']]],
+  ['melttokens',['MeltTokens',['../class_enjin_s_d_k_1_1_enjin.html#aadb3ad4e4418b20dec91da386de2aabc',1,'EnjinSDK.Enjin.MeltTokens(int userIdentityID, string itemID, string index, int amount, System.Action&lt; RequestEvent &gt; callback)'],['../class_enjin_s_d_k_1_1_enjin.html#acb6c36db0dfc21261a27a1aba7f63d63',1,'EnjinSDK.Enjin.MeltTokens(int userIdentityID, string itemID, int amount, System.Action&lt; RequestEvent &gt; callback)']]],
+  ['membereventhandler',['MemberEventHandler',['../namespace_pusher_client.html#a8545b6174a62aa64cfa69e972a9a5b50',1,'PusherClient']]],
+  ['mintfungibleitem',['MintFungibleItem',['../class_enjin_s_d_k_1_1_enjin.html#a784a94cdd2211f24ebaeb36375720433',1,'EnjinSDK.Enjin.MintFungibleItem(int senderID, string[] addresses, string itemID, int value)'],['../class_enjin_s_d_k_1_1_enjin.html#afdf9702e8f825815b49f3db05758f31f',1,'EnjinSDK.Enjin.MintFungibleItem(int senderID, string[] addresses, string itemID, int value, System.Action&lt; RequestEvent &gt; callback)'],['../class_enjin_s_d_k_1_1_enjin_requests.html#a805adddf64a07a864f07800e7976ed2f',1,'EnjinSDK.EnjinRequests.MintFungibleItem()']]],
+  ['mintnonfungibleitem',['MintNonFungibleItem',['../class_enjin_s_d_k_1_1_enjin.html#af182848ac41fdd021257c14a1ecda41f',1,'EnjinSDK.Enjin.MintNonFungibleItem(int senderID, string[] addresses, string itemID)'],['../class_enjin_s_d_k_1_1_enjin.html#aeb8b5aba980b99cf623cb30c5b3e1875',1,'EnjinSDK.Enjin.MintNonFungibleItem(int senderID, string[] addresses, string itemID, System.Action&lt; RequestEvent &gt; callback)'],['../class_enjin_s_d_k_1_1_enjin_requests.html#aa8b18ad128d8c662e73d3fb6b64c45ec',1,'EnjinSDK.EnjinRequests.MintNonFungibleItem()']]]
+];

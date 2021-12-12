@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using Enjin.SDK.GraphQL;
 using Enjin.SDK.Utility;
-using SimpleJSON;
 using UnityEngine;
 
 namespace Enjin.SDK.Core
@@ -31,6 +28,20 @@ namespace Enjin.SDK.Core
                 GraphQuery.variable["limit"] = limit.ToString();
             }
 
+            GraphQuery.variable["page"] = page.ToString();
+            GraphQuery.POST(query);
+
+            return JsonUtility.FromJson<PaginationHelper<CryptoItem>>(EnjinHelpers.GetJSONString(GraphQuery.queryReturn, 2));
+        }
+
+        public PaginationHelper<CryptoItem> GetItemsByCreator(string creator_address, int page, int limit)
+        {
+            string query = string.Empty;
+            query =
+                @"query getAllItems{result:EnjinTokens(creator:""$creator_address^""pagination:{limit:$limit^,page:$page^})
+                {items{index,id,name,creator,totalSupply,reserve,circulatingSupply,supplyModel,meltValue,meltFeeRatio,meltFeeMaxRatio,transferable,transferFeeSettings{type,tokenId,value},nonFungible,icon,markedForDelete}cursor{total,hasPages,perPage,currentPage}}}";
+            GraphQuery.variable["creator_address"] = creator_address.ToString();
+            GraphQuery.variable["limit"] = limit.ToString();
             GraphQuery.variable["page"] = page.ToString();
             GraphQuery.POST(query);
 

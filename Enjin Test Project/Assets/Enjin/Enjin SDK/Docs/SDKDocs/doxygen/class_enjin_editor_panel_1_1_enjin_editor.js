@@ -1,0 +1,37 @@
+var class_enjin_editor_panel_1_1_enjin_editor =
+[
+    [ "CallMethod", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2", [
+      [ "INITILAIZEPLATFORM", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2abfe4b0f83a50a05bd31584304a44452d", null ],
+      [ "LOGOUT", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a6b4ea69e17243db95f7b46c384d40370", null ],
+      [ "REFRESHAPPLIST", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a7003143ad66b2450fb396eadaf74872a", null ],
+      [ "REFRESHUSERROLES", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a38ab5b20e3cdc90f43fabb40983a2fbf", null ],
+      [ "CHECKAPPCHANGE", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a893712a571518de49b13b120b4199fb6", null ],
+      [ "RELOADITEMS", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2aa4cacdcc25f138a721007d9a9c45fd33", null ],
+      [ "RELOADTEAM", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a82642b1758dadac8a2a5d4e01064f7e4", null ],
+      [ "RELOADIDENTITIES", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2afd3527ec22dabdc8cef4aa865be1727f", null ],
+      [ "RELOADALL", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a8b3d6e3d6d42e725b29b831787e76a8a", null ],
+      [ "UPDATEITEMSPERPAGE", "class_enjin_editor_panel_1_1_enjin_editor.html#a214c00958725d59118225c6d5cfc35b2a092026c98c651681f56b82536d95e767", null ]
+    ] ],
+    [ "DisplayDialog", "class_enjin_editor_panel_1_1_enjin_editor.html#a1bb69b9581fe439d9db08379bf662d8b", null ],
+    [ "ExecuteMethod", "class_enjin_editor_panel_1_1_enjin_editor.html#ad9a4b79e21c80961fc9e6a82809b9d22", null ],
+    [ "GetMinMeltValue", "class_enjin_editor_panel_1_1_enjin_editor.html#a62f89b2ab4ad8f6dd5f77eaffa8a3803", null ],
+    [ "HasPermission", "class_enjin_editor_panel_1_1_enjin_editor.html#ab97e8e866f045c51dd7a2e054de513ab", null ],
+    [ "HasPermission", "class_enjin_editor_panel_1_1_enjin_editor.html#a5f05e0b2d6152425588208803ecfcf3c", null ],
+    [ "HasRole", "class_enjin_editor_panel_1_1_enjin_editor.html#ad48c155f2b95587d20cb1ec436b67d16", null ],
+    [ "Init", "class_enjin_editor_panel_1_1_enjin_editor.html#a0df78d32c2ec66f3a7d1718f2da1657f", null ],
+    [ "IsRequestSuccessfull", "class_enjin_editor_panel_1_1_enjin_editor.html#a2a74314c78a8e296d9ac9bbfdb236282", null ],
+    [ "Log", "class_enjin_editor_panel_1_1_enjin_editor.html#a4388d6fa22da72afca7ebe153f452410", null ],
+    [ "TabSelection", "class_enjin_editor_panel_1_1_enjin_editor.html#a960a8631fbecf9c77c3553c6edf1e2b5", null ],
+    [ "AppList", "class_enjin_editor_panel_1_1_enjin_editor.html#aaea8b4232c8edcc03a45a01416b3e8e7", null ],
+    [ "AppsNameList", "class_enjin_editor_panel_1_1_enjin_editor.html#a7c099fbedffa022cf89a54421812c0d8", null ],
+    [ "CostScaleDivider", "class_enjin_editor_panel_1_1_enjin_editor.html#ab6d0cfbc10f62f73138452633f560496", null ],
+    [ "CurrentAppName", "class_enjin_editor_panel_1_1_enjin_editor.html#a8490d9e9b8ba7c161571d3e24815036a", null ],
+    [ "CurrentUser", "class_enjin_editor_panel_1_1_enjin_editor.html#aa2befb4a9049694ec435e30c64cd9123", null ],
+    [ "CurrentUserIdentity", "class_enjin_editor_panel_1_1_enjin_editor.html#a89ad4921adddb791a2442e75c3a69a56", null ],
+    [ "ItemsPerPage", "class_enjin_editor_panel_1_1_enjin_editor.html#aa935bb0b01c07f018a0dce8be4fa0c7b", null ],
+    [ "LastSelectedApp", "class_enjin_editor_panel_1_1_enjin_editor.html#a7f4b818bdf208536ab4f5137e31b1e98", null ],
+    [ "MinCostScale", "class_enjin_editor_panel_1_1_enjin_editor.html#a185659aa6791cdc6ff97d46b1d567b3a", null ],
+    [ "NotificationMonitor", "class_enjin_editor_panel_1_1_enjin_editor.html#a96e2f0d40492cb303233f32d9967195a", null ],
+    [ "SelectedAppIndex", "class_enjin_editor_panel_1_1_enjin_editor.html#a319547ff2b49e979647cfe88c2bbf1a2", null ],
+    [ "SkinTheme", "class_enjin_editor_panel_1_1_enjin_editor.html#a5ad3b35e28088229cb87d21282309277", null ]
+];

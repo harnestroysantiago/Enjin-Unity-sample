@@ -1,0 +1,3 @@
+Linking the Wallet
+
+Whether a user is new or old, it is possible that they have not yet linked a wallet to your application. Here you can display a code to the user that was generated for you by the Enjin SDK. The user should enter this code in their Enjin wallet in order to associate an Ethereum address with your application.

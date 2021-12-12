@@ -1,0 +1,5 @@
+Welcome to the Simple Game tutorial! Here we will walk through the steps needed to operate this very simple implementation of Enjin's Unity SDK.
+
+Account Management
+
+The Trusted Cloud can manage user credentials for you directly through Enjin's SDK. You can prompt users to either register brand new accounts (as would be the case the first time a user uses your application) or to login with an existing account.

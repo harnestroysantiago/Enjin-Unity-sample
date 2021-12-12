@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['unlink',['UnLink',['../class_enjin_s_d_k_1_1_enjin_identities.html#a694038fffe6181c2f3ef94144512f6e8',1,'EnjinSDK::EnjinIdentities']]],
+  ['unlinkidentity',['UnLinkIdentity',['../class_enjin_s_d_k_1_1_enjin.html#a8259456f9646a03d8e25b8c32acea8ff',1,'EnjinSDK::Enjin']]],
+  ['unsubscribe',['Unsubscribe',['../class_pusher_client_1_1_channel.html#aaf9c47c30f5e77cede322fe7782e9ac4',1,'PusherClient::Channel']]],
+  ['update',['Update',['../class_enjin_s_d_k_1_1_enjin_identities.html#ae72370b0dd34d4ce25868a992c2b7396',1,'EnjinSDK.EnjinIdentities.Update()'],['../class_enjin_s_d_k_1_1_enjin_users.html#a42e97b71ba19ec2c259cf65b80841549',1,'EnjinSDK.EnjinUsers.Update()']]],
+  ['updateap',['UpdateAp',['../class_home_controller.html#afc8627bc36a06e17a4e3cbe2c55e1fcc',1,'HomeController']]],
+  ['updateapp',['UpdateApp',['../class_enjin_s_d_k_1_1_enjin.html#a96f749e49da38f1b7206e886ee00531e',1,'EnjinSDK.Enjin.UpdateApp()'],['../class_enjin_s_d_k_1_1_enjin_platform.html#a5589ff9820bd3150cddcfd06ce8c0b6f',1,'EnjinSDK.EnjinPlatform.UpdateApp()']]],
+  ['updatebalances',['UpdateBalances',['../class_enjin_s_d_k_1_1_enjin.html#a3c301ab249242621c7f035e97dec0545',1,'EnjinSDK.Enjin.UpdateBalances()'],['../class_enjin_s_d_k_1_1_enjin_identities.html#a7ef89ca5765863f923944cfe892345f6',1,'EnjinSDK.EnjinIdentities.UpdateBalances()']]],
+  ['updatecryptoitem',['UpdateCryptoItem',['../class_enjin_s_d_k_1_1_enjin.html#ac1c5187520a844b02e3d6e66ed2c5ab9',1,'EnjinSDK.Enjin.UpdateCryptoItem(CryptoItem item)'],['../class_enjin_s_d_k_1_1_enjin.html#ac9a04cdb2eb866cad729a2a0d44074a4',1,'EnjinSDK.Enjin.UpdateCryptoItem(int identityID, CryptoItem item, CryptoItemFieldType fieldType, System.Action&lt; RequestEvent &gt; callback)'],['../class_enjin_s_d_k_1_1_enjin_crypto_items.html#a6367bf3a01515b9495e3b6405b58ff4f',1,'EnjinSDK.EnjinCryptoItems.UpdateCryptoItem()'],['../class_enjin_s_d_k_1_1_enjin_requests.html#a86522cf35a24b0bef60c34b1ddeb6f8b',1,'EnjinSDK.EnjinRequests.UpdateCryptoItem()']]],
+  ['updateenjperitem',['UpdateEnjPerItem',['../class_enjin_editor_panel_1_1_crypto_items_controller.html#ad732c5b0ebe9bfa90e55f4a11060e3fb',1,'EnjinEditorPanel::CryptoItemsController']]],
+  ['updatefields',['UpdateFields',['../class_enjin_s_d_k_1_1_enjin_identities.html#a55fab2bcc1cee051b232caf374197f96',1,'EnjinSDK::EnjinIdentities']]],
+  ['updateidentity',['UpdateIdentity',['../class_enjin_s_d_k_1_1_enjin.html#a610830e0d790b96a42019610973f9dc5',1,'EnjinSDK::Enjin']]],
+  ['updateidentityfields',['UpdateIdentityFields',['../class_enjin_s_d_k_1_1_enjin.html#a1fa3a73a64dfab4edf98a1f333c691b9',1,'EnjinSDK::Enjin']]],
+  ['updatemember',['UpdateMember',['../class_team_controller.html#a3bfb94f0426b212efd74d0212a4a2d9d',1,'TeamController']]],
+  ['updateouputstring',['updateOuputString',['../class_doxy_runner.html#a4474ed980f895f97ac3517fe85834259',1,'DoxyRunner']]],
+  ['updaterole',['UpdateRole',['../class_enjin_s_d_k_1_1_enjin.html#ae8254afbc0bec82aef17b58eeb825ba6',1,'EnjinSDK.Enjin.UpdateRole(string name, string[] permissions)'],['../class_enjin_s_d_k_1_1_enjin.html#a6a9edbf0372ce2a5bbff577fe50a4a4b',1,'EnjinSDK.Enjin.UpdateRole(string name, string newName, string[] permissions)'],['../class_enjin_s_d_k_1_1_enjin_platform.html#a62ae65e07d5cc6a524d27fef7084eccb',1,'EnjinSDK.EnjinPlatform.UpdateRole(string name, string[] permissions)'],['../class_enjin_s_d_k_1_1_enjin_platform.html#ab97c2cf244c14dff4cc1cbfd2b6c7289',1,'EnjinSDK.EnjinPlatform.UpdateRole(string name, string newName, string[] permissions)']]],
+  ['updateuser',['UpdateUser',['../class_enjin_s_d_k_1_1_enjin.html#a516e64bf92ddd76d980d6056d3c624d2',1,'EnjinSDK.Enjin.UpdateUser(int userID, string username)'],['../class_enjin_s_d_k_1_1_enjin.html#adb4d713b9f6e259638d8e9dc62f0bb38',1,'EnjinSDK.Enjin.UpdateUser(int userID, string username, string email)'],['../class_enjin_s_d_k_1_1_enjin.html#a2ad557eea3e94226cdf5c37a17237cf7',1,'EnjinSDK.Enjin.UpdateUser(int userID, string username, string email, string roles)']]],
+  ['updatewalletbalances',['UpdateWalletBalances',['../class_wallet_tab.html#a7984d9256dc1c247d7463a22c48fb289',1,'WalletTab']]],
+  ['urlgetdata',['URLGetData',['../class_enjin_s_d_k_1_1_enjin.html#ae7651a52a223b3ad264debb1d31f890b',1,'EnjinSDK::Enjin']]],
+  ['user',['User',['../class_enjin_s_d_k_1_1_identity_1_1_user.html#a7fea80ce895de79d37152e70ff7dfcec',1,'EnjinSDK::Identity::User']]]
+];

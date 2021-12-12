@@ -1,0 +1,1037 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: Enjin Kovan API Reference
+  m_EditorClassIdentifier: 
+  url: https://kovan.cloud.enjin.io/graphql
+  queries:
+  - name: Login
+    type: 0
+    query: "query Login{\n    EnjinOauth(  email :\"MemphisGameDevelopers@gmail.com\",
+      password :\"LDK3mj9GM9yPtWw\" ){\n        id\n        name\n        isPlayer\n       
+      accessTokens\n        identities{\n            id\n            app{\n               
+      id\n                name\n        }\n            tokens{\n                id\n               
+      name\n                icon\n                metadata\n        }\n           
+      wallet{\n                ethAddress\n                ethBalance\n               
+      enjBalance\n            }\n        }\n    }\n}"
+    queryString: EnjinOauth
+    returnType: EnjinUser
+    queryOptions:
+    - AuthApp
+    - AuthPlayer
+    - EnjinApp
+    - EnjinApps
+    - EnjinBalances
+    - EnjinIdentities
+    - EnjinIdentity
+    - EnjinOauth
+    - EnjinRoles
+    - EnjinSearch
+    - EnjinTokenEvents
+    - EnjinToken
+    - EnjinTokens
+    - EnjinTransactions
+    - EnjinUser
+    - EnjinUsers
+    - EnjinWallet
+    - GasPrice
+    - Platform
+    fields:
+    - index: 0
+      name: id
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: name
+        type: String
+      - name: access_tokens
+        type: Object
+      - name: accessTokens
+        type: Object
+      - name: isPlayer
+        type: Boolean
+      - name: app
+        type: EnjinApp
+      - name: apps
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: emailVerified
+        type: Boolean
+      - name: roles
+        type: EnjinRole
+      - name: email
+        type: String
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinUser
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 1
+      name: name
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: name
+        type: String
+      - name: access_tokens
+        type: Object
+      - name: accessTokens
+        type: Object
+      - name: isPlayer
+        type: Boolean
+      - name: app
+        type: EnjinApp
+      - name: apps
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: emailVerified
+        type: Boolean
+      - name: roles
+        type: EnjinRole
+      - name: email
+        type: String
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinUser
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 4
+      name: isPlayer
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: name
+        type: String
+      - name: access_tokens
+        type: Object
+      - name: accessTokens
+        type: Object
+      - name: isPlayer
+        type: Boolean
+      - name: app
+        type: EnjinApp
+      - name: apps
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: emailVerified
+        type: Boolean
+      - name: roles
+        type: EnjinRole
+      - name: email
+        type: String
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinUser
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 3
+      name: accessTokens
+      type: Object
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: name
+        type: String
+      - name: access_tokens
+        type: Object
+      - name: accessTokens
+        type: Object
+      - name: isPlayer
+        type: Boolean
+      - name: app
+        type: EnjinApp
+      - name: apps
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: emailVerified
+        type: Boolean
+      - name: roles
+        type: EnjinRole
+      - name: email
+        type: String
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinUser
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 7
+      name: identities
+      type: EnjinIdentity
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: id
+        type: Int
+      - name: name
+        type: String
+      - name: access_tokens
+        type: Object
+      - name: accessTokens
+        type: Object
+      - name: isPlayer
+        type: Boolean
+      - name: app
+        type: EnjinApp
+      - name: apps
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: emailVerified
+        type: Boolean
+      - name: roles
+        type: EnjinRole
+      - name: email
+        type: String
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinUser
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 0
+      name: id
+      type: Int
+      parentIndexes: 04000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: linking_code
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linking_code_qr
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: user
+        type: EnjinUser
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallet
+        type: EnjinWallet
+      - name: ethereum_address
+        type: String
+      - name: eth_balance
+        type: Float
+      - name: enj_balance
+        type: Float
+      - name: enj_allowance
+        type: Float
+      - name: all_tokens_balance
+        type: Object
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinIdentity
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 7
+      name: app
+      type: EnjinApp
+      parentIndexes: 04000000
+      hasSubField: 1
+      possibleFields:
+      - name: id
+        type: Int
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: linking_code
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linking_code_qr
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: user
+        type: EnjinUser
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallet
+        type: EnjinWallet
+      - name: ethereum_address
+        type: String
+      - name: eth_balance
+        type: Float
+      - name: enj_balance
+        type: Float
+      - name: enj_allowance
+        type: Float
+      - name: all_tokens_balance
+        type: Object
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinIdentity
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 0
+      name: id
+      type: Int
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: secret
+        type: String
+      - name: name
+        type: String
+      - name: description
+        type: String
+      - name: image
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: token_count
+        type: Int
+      - name: tokenCount
+        type: Int
+      - name: owner
+        type: EnjinUser
+      - name: identities
+        type: EnjinIdentity
+      - name: identity
+        type: EnjinIdentity
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallets
+        type: EnjinWallet
+      - name: roles
+        type: EnjinRole
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinApp
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 2
+      name: name
+      type: String
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: Int
+      - name: secret
+        type: String
+      - name: name
+        type: String
+      - name: description
+        type: String
+      - name: image
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: token_count
+        type: Int
+      - name: tokenCount
+        type: Int
+      - name: owner
+        type: EnjinUser
+      - name: identities
+        type: EnjinIdentity
+      - name: identity
+        type: EnjinIdentity
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallets
+        type: EnjinWallet
+      - name: roles
+        type: EnjinRole
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinApp
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 10
+      name: tokens
+      type: EnjinToken
+      parentIndexes: 04000000
+      hasSubField: 1
+      possibleFields:
+      - name: id
+        type: Int
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: linking_code
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linking_code_qr
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: user
+        type: EnjinUser
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallet
+        type: EnjinWallet
+      - name: ethereum_address
+        type: String
+      - name: eth_balance
+        type: Float
+      - name: enj_balance
+        type: Float
+      - name: enj_allowance
+        type: Float
+      - name: all_tokens_balance
+        type: Object
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinIdentity
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 0
+      name: id
+      type: String
+      parentIndexes: 0400000009000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: String
+      - name: name
+        type: String
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: availableToMint
+        type: String
+      - name: blockHeight
+        type: Int
+      - name: creator
+        type: String
+      - name: firstBlock
+        type: Int
+      - name: icon
+        type: String
+      - name: meltFeeRatio
+        type: Int
+      - name: meltFeeMaxRatio
+        type: Int
+      - name: meltValue
+        type: BigInt
+      - name: metadata
+        type: Object
+      - name: markedForDelete
+        type: Boolean
+      - name: nonFungible
+        type: Boolean
+      - name: reserve
+        type: String
+      - name: supplyModel
+        type: TokenSupplyModel
+      - name: circulatingSupply
+        type: BigInt
+      - name: totalSupply
+        type: BigInt
+      - name: transferable
+        type: TokenTransferable
+      - name: transferFeeSettings
+        type: EnjinTokenTransferFeeSettings
+      - name: balance
+        type: Float
+      - name: index
+        type: String
+      - name: itemURI
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: tokenEvents
+        type: EnjinTokenEvent
+      - name: transactions
+        type: EnjinTransaction
+      - name: wallet
+        type: EnjinWallet
+      - name: token_id
+        type: String
+      - name: creatorIdentity
+        type: EnjinIdentity
+      - name: isCreator
+        type: Boolean
+      - name: requests
+        type: EnjinTransaction
+      - name: variantMode
+        type: TokenVariantMode
+      - name: variants
+        type: EnjinTokenVariant
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinToken
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 1
+      name: name
+      type: String
+      parentIndexes: 0400000009000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: String
+      - name: name
+        type: String
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: availableToMint
+        type: String
+      - name: blockHeight
+        type: Int
+      - name: creator
+        type: String
+      - name: firstBlock
+        type: Int
+      - name: icon
+        type: String
+      - name: meltFeeRatio
+        type: Int
+      - name: meltFeeMaxRatio
+        type: Int
+      - name: meltValue
+        type: BigInt
+      - name: metadata
+        type: Object
+      - name: markedForDelete
+        type: Boolean
+      - name: nonFungible
+        type: Boolean
+      - name: reserve
+        type: String
+      - name: supplyModel
+        type: TokenSupplyModel
+      - name: circulatingSupply
+        type: BigInt
+      - name: totalSupply
+        type: BigInt
+      - name: transferable
+        type: TokenTransferable
+      - name: transferFeeSettings
+        type: EnjinTokenTransferFeeSettings
+      - name: balance
+        type: Float
+      - name: index
+        type: String
+      - name: itemURI
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: tokenEvents
+        type: EnjinTokenEvent
+      - name: transactions
+        type: EnjinTransaction
+      - name: wallet
+        type: EnjinWallet
+      - name: token_id
+        type: String
+      - name: creatorIdentity
+        type: EnjinIdentity
+      - name: isCreator
+        type: Boolean
+      - name: requests
+        type: EnjinTransaction
+      - name: variantMode
+        type: TokenVariantMode
+      - name: variants
+        type: EnjinTokenVariant
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinToken
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 8
+      name: icon
+      type: String
+      parentIndexes: 0400000009000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: String
+      - name: name
+        type: String
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: availableToMint
+        type: String
+      - name: blockHeight
+        type: Int
+      - name: creator
+        type: String
+      - name: firstBlock
+        type: Int
+      - name: icon
+        type: String
+      - name: meltFeeRatio
+        type: Int
+      - name: meltFeeMaxRatio
+        type: Int
+      - name: meltValue
+        type: BigInt
+      - name: metadata
+        type: Object
+      - name: markedForDelete
+        type: Boolean
+      - name: nonFungible
+        type: Boolean
+      - name: reserve
+        type: String
+      - name: supplyModel
+        type: TokenSupplyModel
+      - name: circulatingSupply
+        type: BigInt
+      - name: totalSupply
+        type: BigInt
+      - name: transferable
+        type: TokenTransferable
+      - name: transferFeeSettings
+        type: EnjinTokenTransferFeeSettings
+      - name: balance
+        type: Float
+      - name: index
+        type: String
+      - name: itemURI
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: tokenEvents
+        type: EnjinTokenEvent
+      - name: transactions
+        type: EnjinTransaction
+      - name: wallet
+        type: EnjinWallet
+      - name: token_id
+        type: String
+      - name: creatorIdentity
+        type: EnjinIdentity
+      - name: isCreator
+        type: Boolean
+      - name: requests
+        type: EnjinTransaction
+      - name: variantMode
+        type: TokenVariantMode
+      - name: variants
+        type: EnjinTokenVariant
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinToken
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 12
+      name: metadata
+      type: Object
+      parentIndexes: 0400000009000000
+      hasSubField: 0
+      possibleFields:
+      - name: id
+        type: String
+      - name: name
+        type: String
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: availableToMint
+        type: String
+      - name: blockHeight
+        type: Int
+      - name: creator
+        type: String
+      - name: firstBlock
+        type: Int
+      - name: icon
+        type: String
+      - name: meltFeeRatio
+        type: Int
+      - name: meltFeeMaxRatio
+        type: Int
+      - name: meltValue
+        type: BigInt
+      - name: metadata
+        type: Object
+      - name: markedForDelete
+        type: Boolean
+      - name: nonFungible
+        type: Boolean
+      - name: reserve
+        type: String
+      - name: supplyModel
+        type: TokenSupplyModel
+      - name: circulatingSupply
+        type: BigInt
+      - name: totalSupply
+        type: BigInt
+      - name: transferable
+        type: TokenTransferable
+      - name: transferFeeSettings
+        type: EnjinTokenTransferFeeSettings
+      - name: balance
+        type: Float
+      - name: index
+        type: String
+      - name: itemURI
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: identities
+        type: EnjinIdentity
+      - name: tokenEvents
+        type: EnjinTokenEvent
+      - name: transactions
+        type: EnjinTransaction
+      - name: wallet
+        type: EnjinWallet
+      - name: token_id
+        type: String
+      - name: creatorIdentity
+        type: EnjinIdentity
+      - name: isCreator
+        type: Boolean
+      - name: requests
+        type: EnjinTransaction
+      - name: variantMode
+        type: TokenVariantMode
+      - name: variants
+        type: EnjinTokenVariant
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinToken
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 11
+      name: wallet
+      type: EnjinWallet
+      parentIndexes: 04000000
+      hasSubField: 1
+      possibleFields:
+      - name: id
+        type: Int
+      - name: app_id
+        type: Int
+      - name: appId
+        type: Int
+      - name: linking_code
+        type: String
+      - name: linkingCode
+        type: String
+      - name: linking_code_qr
+        type: String
+      - name: linkingCodeQr
+        type: String
+      - name: app
+        type: EnjinApp
+      - name: user
+        type: EnjinUser
+      - name: transactions
+        type: EnjinTransaction
+      - name: tokens
+        type: EnjinToken
+      - name: wallet
+        type: EnjinWallet
+      - name: ethereum_address
+        type: String
+      - name: eth_balance
+        type: Float
+      - name: enj_balance
+        type: Float
+      - name: enj_allowance
+        type: Float
+      - name: all_tokens_balance
+        type: Object
+      - name: createdAt
+        type: DateTime
+      - name: updatedAt
+        type: DateTime
+      - name: created_at
+        type: Object
+      - name: updated_at
+        type: Object
+      - name: items
+        type: EnjinIdentity
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 0
+      name: ethAddress
+      type: String
+      parentIndexes: 040000000e000000
+      hasSubField: 0
+      possibleFields:
+      - name: ethAddress
+        type: String
+      - name: enjAllowance
+        type: Float
+      - name: enjBalance
+        type: Float
+      - name: ethBalance
+        type: Float
+      - name: balances
+        type: EnjinBalance
+      - name: tokensCreated
+        type: EnjinToken
+      - name: items
+        type: EnjinWallet
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 3
+      name: ethBalance
+      type: Float
+      parentIndexes: 040000000e000000
+      hasSubField: 0
+      possibleFields:
+      - name: ethAddress
+        type: String
+      - name: enjAllowance
+        type: Float
+      - name: enjBalance
+        type: Float
+      - name: ethBalance
+        type: Float
+      - name: balances
+        type: EnjinBalance
+      - name: tokensCreated
+        type: EnjinToken
+      - name: items
+        type: EnjinWallet
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    - index: 2
+      name: enjBalance
+      type: Float
+      parentIndexes: 040000000e000000
+      hasSubField: 0
+      possibleFields:
+      - name: ethAddress
+        type: String
+      - name: enjAllowance
+        type: Float
+      - name: enjBalance
+        type: Float
+      - name: ethBalance
+        type: Float
+      - name: balances
+        type: EnjinBalance
+      - name: tokensCreated
+        type: EnjinToken
+      - name: items
+        type: EnjinWallet
+      - name: cursor
+        type: PaginationCursor
+      hasChanged: 0
+    isComplete: 1
+  - name: RetrieveAppAccessToken
+    type: 0
+    query: "query RetrieveAppAccessToken{\n    AuthApp(  id :3846, secret :\"pTCt4CekupNKJPBa62q8Ywu4QryQmkfBjclUe7Rw\"
+      ){\n        accessToken\n    }\n}"
+    queryString: AuthApp
+    returnType: EnjinAuth
+    queryOptions:
+    - AuthApp
+    - AuthPlayer
+    - EnjinApp
+    - EnjinApps
+    - EnjinBalances
+    - EnjinIdentities
+    - EnjinIdentity
+    - EnjinOauth
+    - EnjinRoles
+    - EnjinSearch
+    - EnjinTokenEvents
+    - EnjinToken
+    - EnjinTokens
+    - EnjinTransactions
+    - EnjinUser
+    - EnjinUsers
+    - EnjinWallet
+    - GasPrice
+    - Platform
+    fields:
+    - index: 0
+      name: accessToken
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: accessToken
+        type: String
+      - name: refreshToken
+        type: String
+      - name: expiresIn
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  mutations: []
+  subscriptions: []
+  loading: 1
