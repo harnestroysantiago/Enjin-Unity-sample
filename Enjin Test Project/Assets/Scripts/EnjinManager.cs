@@ -16,6 +16,7 @@ namespace Enjin.SDK.Core
        
         public API_Credentials testnet, mainnet, jumpnet;
 
+        [HideInInspector]
         public API_Credentials _api;
         
         [SerializeField] private EnjinUIManager _enjinUIManager;
