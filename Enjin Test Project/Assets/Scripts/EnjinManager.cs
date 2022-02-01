@@ -13,18 +13,18 @@ namespace Enjin.SDK.Core
     }
     public class EnjinManager : MonoBehaviour
     {
-       
+
         public API_Credentials testnet, mainnet, jumpnet;
 
         [HideInInspector]
         public API_Credentials _api;
-        
+
         [SerializeField] private EnjinUIManager _enjinUIManager;
 
         public User _currentEnjinUser = null;
         public User _adminAccount = null;
         bool _isConnecting = false;
-        
+
         private void Awake()
         {
             Enjin.IsDebugLogActive = true;
@@ -32,13 +32,13 @@ namespace Enjin.SDK.Core
 
         public void SetPlatform(bool test)
         {
-            print("testnet: "+ test);
+            print("testnet: " + test);
             _api = test ? testnet : mainnet;
         }
 
         private void Start()
         {
-            _enjinUIManager.RegisterAppLoginEvent(() => 
+            _enjinUIManager.RegisterAppLoginEvent(() =>
             {
                 if (Enjin.LoginState == LoginState.VALID)
                     return;
@@ -57,12 +57,12 @@ namespace Enjin.SDK.Core
 
                 _currentEnjinUser = Enjin.GetUser(_enjinUIManager.UserName);
                 _adminAccount = Enjin.GetUser(_api.ADMIN_USER);
-                _enjinUIManager.AccessToken = Enjin.AccessToken;                
+                _enjinUIManager.AccessToken = Enjin.AccessToken;
 
                 Debug.Log($"[Logined User ID] {_currentEnjinUser.id}");
                 Debug.Log($"[Logined User name] {_currentEnjinUser.name}");
 
-                _enjinUIManager.UserName = _currentEnjinUser.name;                                
+                _enjinUIManager.UserName = _currentEnjinUser.name;
                 _enjinUIManager.DisableUserLoginUI();
                 EnjinWallet.Instance.PLAYER_ADDRESS = _currentEnjinUser.identities[0].wallet.ethAddress;
                 EnjinWallet.Instance.GetBalances();
@@ -87,6 +87,9 @@ namespace Enjin.SDK.Core
             // TO DO : BindEvent from pusher
         }
 
+
+        // this is an aleternative to using async function, 
+        // you can implement this, using coroutine and this is an example of it
         private IEnumerator AppLoginRoutine()
         {
             Enjin.StartPlatform(_enjinUIManager.EnjinPlatformURL,
@@ -94,8 +97,12 @@ namespace Enjin.SDK.Core
 
             int tick = 0;
             YieldInstruction waitASecond = new WaitForSeconds(1f);
+
+            // try to log in within 10 seconds or 10 ticks
             while (tick < 10)
             {
+                // if we successfully logged in display out, enjin appIDm, 
+                // disable app login UI, and end enable user is logged in ui
                 if (Enjin.LoginState == LoginState.VALID)
                 {
                     Debug.Log("App auth success");
@@ -105,6 +112,7 @@ namespace Enjin.SDK.Core
                     yield break;
                 }
 
+                // increase tick and wait for another second before trying
                 tick++;
                 yield return waitASecond;
             }
@@ -114,6 +122,7 @@ namespace Enjin.SDK.Core
 
             yield return null;
         }
+
     }
 }
 
