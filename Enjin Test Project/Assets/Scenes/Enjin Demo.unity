@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,8 +297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -786.3098, y: -380}
-  m_SizeDelta: {x: -1662.6062, y: -1024.6849}
+  m_AnchoredPosition: {x: -786.3098, y: -380.01}
+  m_SizeDelta: {x: -1662.6062, y: -1088.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53229623
 MonoBehaviour:
@@ -774,13 +774,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testnet:
-    APP_ID: 906
-    APP_SECRET: iRgNUTtRcIHVHH4ANSlqQEvfOgmJX9WJax4yrZrB
-    ADMIN_USER: Memphis Game Devs
+    APP_ID: 5931
+    APP_SECRET: Qi8m49J6Skvkf7naN224UwH2Gdo54BCEK3lMVFGK
+    ADMIN_USER: Troy Santiago
   mainnet:
-    APP_ID: 9135
-    APP_SECRET: w4NsdKsxnPYxbgu0GO2hEDQQcbGdP4MmMDKd5OcA
-    ADMIN_USER: Evilotaku
+    APP_ID: 0
+    APP_SECRET: 
+    ADMIN_USER: 
   jumpnet:
     APP_ID: 0
     APP_SECRET: 
@@ -848,8 +848,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -786.30005, y: -439}
-  m_SizeDelta: {x: -1662.6259, y: -1024.6849}
+  m_AnchoredPosition: {x: -786.3, y: -442.71985}
+  m_SizeDelta: {x: -1662.6259, y: -1096.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410221234
 MonoBehaviour:
@@ -2269,8 +2269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829, y: -494}
-  m_SizeDelta: {x: -1747.9756, y: -1024.6849}
+  m_AnchoredPosition: {x: -786.31, y: -504.03}
+  m_SizeDelta: {x: -1662.6, y: -1095.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &824324597
 MonoBehaviour:
@@ -2810,8 +2810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -371, y: -438.84}
-  m_SizeDelta: {x: 633.48047, y: 55.00122}
+  m_AnchoredPosition: {x: -340.87, y: -442.72}
+  m_SizeDelta: {x: 633.4805, y: 47.266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010288547
 MonoBehaviour:
@@ -3023,8 +3023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -339.5, y: -380}
-  m_SizeDelta: {x: 633.48047, y: 55.316284}
+  m_AnchoredPosition: {x: -308.6, y: -380.01}
+  m_SizeDelta: {x: 698.022, y: 55.274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045818777
 MonoBehaviour:
@@ -4929,8 +4929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -572.64056, y: -613.24}
-  m_SizeDelta: {x: 316.199, y: 266.48}
+  m_AnchoredPosition: {x: 136.69, y: -504.03}
+  m_SizeDelta: {x: 1588.6, y: 48.0641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996448367
 MonoBehaviour:
@@ -4959,7 +4959,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
